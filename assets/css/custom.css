@@ -30,21 +30,23 @@
 }
 
 /* Make theme toggle more subtle like other navbar text */
-.hextra-nav-container a[title*="theme"] {
-    opacity: 0.7 !important;
+.hextra-nav-container button[aria-label*="theme"] {
+    opacity: 0.75 !important;
     color: rgb(107 114 128) !important; /* text-gray-500 */
 }
 
-.hextra-nav-container a[title*="theme"]:hover {
-    opacity: 1 !important;
+.hextra-nav-container button[aria-label*="theme"]:hover {
+    opacity: 0.9 !important;
     color: rgb(75 85 99) !important; /* text-gray-600 */
 }
 
 /* Dark mode version */
-.dark .hextra-nav-container a[title*="theme"] {
+.dark .hextra-nav-container button[aria-label*="theme"] {
     color: rgb(156 163 175) !important; /* dark:text-gray-400 */
+    opacity: 0.75 !important;
 }
 
-.dark .hextra-nav-container a[title*="theme"]:hover {
+.dark .hextra-nav-container button[aria-label*="theme"]:hover {
     color: rgb(209 213 219) !important; /* dark:text-gray-300 */
+    opacity: 0.9 !important;
 }
