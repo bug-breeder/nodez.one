@@ -114,6 +114,8 @@ menu:
 
 params:
   description: Small acts, giant impacts - Creating useful products that solve real problems for real people.
+  
+  favicon: /favicon.svg
 
   externalLinkDecoration: true
 
@@ -124,9 +126,13 @@ params:
 
   navbar:
     displayTitle: true
-    displayLogo: false
+    displayLogo: true
     displayThemeToggle: true
     width: wide
+    logo:
+      path: logo.svg
+      width: 32
+      height: 32
 
   theme:
     # light | dark | system
