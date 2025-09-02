@@ -1,0 +1,50 @@
+/* Custom styles for nodez.one */
+
+/* Reduce footer height only */
+.hextra-footer .hextra-max-footer-width.hx\:py-12 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* Also target the custom footer padding */
+.hextra-footer .hx\:py-6 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* Ensure footer copyright is perfectly centered */
+.hextra-custom-footer,
+.hextra-custom-footer > div {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+/* Target the footer container more specifically */
+.hextra-footer .hextra-custom-footer {
+    margin: 0 auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Make theme toggle more subtle like other navbar text */
+.hextra-nav-container a[title*="theme"] {
+    opacity: 0.7 !important;
+    color: rgb(107 114 128) !important; /* text-gray-500 */
+}
+
+.hextra-nav-container a[title*="theme"]:hover {
+    opacity: 1 !important;
+    color: rgb(75 85 99) !important; /* text-gray-600 */
+}
+
+/* Dark mode version */
+.dark .hextra-nav-container a[title*="theme"] {
+    color: rgb(156 163 175) !important; /* dark:text-gray-400 */
+}
+
+.dark .hextra-nav-container a[title*="theme"]:hover {
+    color: rgb(209 213 219) !important; /* dark:text-gray-300 */
+}
