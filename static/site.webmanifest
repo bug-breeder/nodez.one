@@ -1,0 +1,15 @@
+{
+  "name": "nodez.one",
+  "short_name": "nodez.one",
+  "description": "Small acts, giant impacts - Creating useful products that solve real problems for real people.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
