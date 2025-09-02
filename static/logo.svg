@@ -47,8 +47,8 @@
         stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- Network nodes -->
-  <circle class="node" cx="60"  cy="60"  r="40" fill="#FFD180"/>
-  <circle class="node" cx="240" cy="60"  r="40" fill="#CCFF90"/>
-  <circle class="node" cx="60"  cy="240" r="40" fill="#EA80FC"/>
-  <circle class="node" cx="240" cy="240" r="40" fill="#FF9E80"/>
+  <circle class="node" cx="60"  cy="60"  r="40" fill="#FFD180" filter="url(#shadow)"/>
+  <circle class="node" cx="240" cy="60"  r="40" fill="#CCFF90" filter="url(#shadow)"/>
+  <circle class="node" cx="60"  cy="240" r="40" fill="#EA80FC" filter="url(#shadow)"/>
+  <circle class="node" cx="240" cy="240" r="40" fill="#FF9E80" filter="url(#shadow)"/>
 </svg>
