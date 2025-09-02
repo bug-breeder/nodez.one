@@ -22,7 +22,7 @@ layout: hextra-home
 </div>
 
 <div class="hx:mb-6">
-{{< hextra/hero-button text="Explore" link="about" >}}
+{{< hextra/hero-button text="Explore" link="showcase" >}}
 </div>
 
 <div class="hx:mt-6"></div>

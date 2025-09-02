@@ -1,12 +1,13 @@
 /* Custom styles for nodez.one */
 
-/* Hero section with logo positioning */
+/* Hero section with logo positioning - HOMEPAGE ONLY */
 @media (min-width: 1024px) {
-  .hextra-max-page-width {
+  /* Target homepage using is-homepage class */
+  .is-homepage .hextra-max-page-width {
     position: relative;
   }
   
-  .hextra-max-page-width::after {
+  .is-homepage .hextra-max-page-width::after {
     content: '';
     position: absolute;
     top: 6rem;
@@ -20,63 +21,19 @@
     pointer-events: auto;
     opacity: 0.9;
     z-index: 1;
-    animation: logoFloat 6s ease-in-out infinite;
-    filter: drop-shadow(0 0 20px rgba(255, 138, 128, 0.3));
+    filter: drop-shadow(0 0 8px rgba(255, 138, 128, 0.15));
     transition: all 0.3s ease;
-    will-change: transform, filter;
   }
   
-  .hextra-max-page-width:hover::after {
-    transform: translateY(-10px) scale(1.05);
-    filter: drop-shadow(0 0 30px rgba(255, 138, 128, 0.5));
+  .is-homepage .hextra-max-page-width:hover::after {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 12px rgba(255, 138, 128, 0.25));
     opacity: 1;
-  }
-  
-  @keyframes logoFloat {
-    0%, 100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
+    transition: all 0.3s ease;
   }
 }
 
-/* Tablet responsive logo */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .hextra-max-page-width {
-    position: relative;
-  }
-  
-  .hextra-max-page-width::after {
-    content: '';
-    position: absolute;
-    top: 4rem;
-    right: 2rem;
-    width: 180px;
-    height: 180px;
-    background-image: url('/logo.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    pointer-events: auto;
-    opacity: 0.8;
-    z-index: 1;
-    animation: logoFloat 6s ease-in-out infinite;
-    filter: drop-shadow(0 0 15px rgba(255, 138, 128, 0.25));
-    transition: all 0.3s ease;
-    will-change: transform, filter;
-  }
-  
-  .hextra-max-page-width > div:last-child {
-    margin-right: 8rem;
-  }
-  
-  /* Add margin only on desktop to prevent overlap with logo */
-  .hextra-max-page-width > div:last-child {
-    margin-right: 12rem;
-  }
-}
+/* Tablet responsive logo - REMOVED (no logo on tablets/mobile) */
 
 /* Remove margin on mobile and small tablets */
 @media (max-width: 1023px) {
@@ -97,7 +54,7 @@
     padding-bottom: 1rem !important;
 }
 
-/* Ensure footer copyright is perfectly centered */
+/* Ensure footer copyright is perfectly centered and bigger text */
 .hextra-custom-footer,
 .hextra-custom-footer > div {
     display: flex !important;
@@ -105,6 +62,8 @@
     align-items: center !important;
     width: 100% !important;
     text-align: center !important;
+    font-size: 1.125rem !important; /* Make text bigger (18px) */
+    font-weight: 500 !important; /* Medium weight */
 }
 
 /* Target the footer container more specifically */
